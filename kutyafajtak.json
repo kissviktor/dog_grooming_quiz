@@ -203,15 +203,15 @@
   },
   {
    "id": 17,
-   "slug": "chihuahua",
-   "name": "Chihuahua",
+   "slug": "rovidszoru-chihuahua",
+   "name": "Rövidszőrű chihuahua",
    "accepted_names": [
-    "chihuahua",
-    "csivava"
+    "rövidszőrű chihuahua",
+    "rövidszőrű csivava"
    ],
    "coat_type": "rovid",
    "grooming_procedure": "altalanos",
-   "image": "images/chihuahua.webp"
+   "image": "images/rovidszoru-chihuahua.webp"
   },
   {
    "id": 18,
@@ -1156,6 +1156,18 @@
    "coat_type": "vegyes",
    "grooming_procedure": "trimmeles",
    "image": "images/amerikai-cocker-spaniel.webp"
+  },
+  {
+   "id": 102,
+   "slug": "hosszuszoru-chihuahua",
+   "name": "Hosszúszőrű chihuahua",
+   "accepted_names": [
+    "hosszúszőrű chihuahua",
+    "hosszúszőrű csivava"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/hosszuszoru-chihuahua.webp"
   }
  ]
 }
