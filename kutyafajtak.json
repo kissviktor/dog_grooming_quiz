@@ -3,22 +3,22 @@
   "version": "0.1",
   "note": "ELŐZETES kategóriák – a szakvizsga hivatalos kategóriáival le kell cserélni. Az akceptált nevek összehasonlításakor kis-/nagybetű és ékezetek figyelmen kívül hagyandók.",
   "coat_types": {
-   "short": "Rövid, sima szőrzet",
-   "long": "Hosszú szőrzet",
-   "double": "Dupla szőrzet (alászőrös)",
-   "wire": "Drótszőrű",
-   "curly": "Göndör / pödrött",
-   "corded": "Zsinóros",
-   "hairless": "Szőrtelen / csupasz"
+   "rovid": "Rövid szőr",
+   "hosszu": "Hosszú-, félhosszú szőr",
+   "drotos": "Drótos szőrzet",
+   "nemezes": "Nemezes szőrzet",
+   "szortelen": "Szőrtelen",
+   "szalkas": "Szálkás szőrzet",
+   "kettos": "Északi kettős szőrzet",
+   "nyiros": "Nyírós szőrzet",
+   "vegyes": "Vegyes szőrzet"
   },
   "grooming_procedures": {
-   "brush_bath": "Fürdetés, szárítás, kefélés",
-   "long_coat_care": "Fürdetés, szárítás, fésülés, formázás",
-   "undercoat_removal": "Alászőr-eltávolítás (rugózás), fürdetés, szárítás",
-   "hand_stripping": "Trimmelés (kézi szőrtépés)",
-   "clipping": "Gépi nyírás, ollózás, formára szabás",
-   "cord_care": "Zsinórok kezelése, fürdetés, szárítás",
-   "skin_care": "Bőrápolás, fürdetés"
+   "trimmeles": "Trimmelés",
+   "fesules": "Fésülés",
+   "feltepes": "Kézzel való feltépés",
+   "nyiras": "Nyírás",
+   "altalanos": "Általános ápolás"
   },
   "image_note": "A képfájlok még nem léteznek, a mezők helyőrzők."
  },
