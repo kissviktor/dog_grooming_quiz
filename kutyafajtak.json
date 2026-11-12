@@ -1,0 +1,1641 @@
+{
+ "meta": {
+  "version": "0.1",
+  "note": "ELŐZETES kategóriák – a szakvizsga hivatalos kategóriáival le kell cserélni. Az akceptált nevek összehasonlításakor kis-/nagybetű és ékezetek figyelmen kívül hagyandók.",
+  "coat_types": {
+   "short": "Rövid, sima szőrzet",
+   "long": "Hosszú szőrzet",
+   "double": "Dupla szőrzet (alászőrös)",
+   "wire": "Drótszőrű",
+   "curly": "Göndör / pödrött",
+   "corded": "Zsinóros",
+   "hairless": "Szőrtelen / csupasz"
+  },
+  "grooming_procedures": {
+   "brush_bath": "Fürdetés, szárítás, kefélés",
+   "long_coat_care": "Fürdetés, szárítás, fésülés, formázás",
+   "undercoat_removal": "Alászőr-eltávolítás (rugózás), fürdetés, szárítás",
+   "hand_stripping": "Trimmelés (kézi szőrtépés)",
+   "clipping": "Gépi nyírás, ollózás, formára szabás",
+   "cord_care": "Zsinórok kezelése, fürdetés, szárítás",
+   "skin_care": "Bőrápolás, fürdetés"
+  },
+  "image_note": "A képfájlok még nem léteznek, a mezők helyőrzők."
+ },
+ "breeds": [
+  {
+   "id": 1,
+   "slug": "labrador-retriever",
+   "name": "Labrador retriever",
+   "accepted_names": [
+    "labrador retriever",
+    "labrador-retriever",
+    "labradorretriever",
+    "labrador",
+    "labi"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/labrador-retriever.webp"
+  },
+  {
+   "id": 2,
+   "slug": "golden-retriever",
+   "name": "Golden retriever",
+   "accepted_names": [
+    "golden retriever",
+    "golden-retriever",
+    "goldenretriever",
+    "golden",
+    "goldi"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/golden-retriever.webp"
+  },
+  {
+   "id": 3,
+   "slug": "nemet-juhasz",
+   "name": "Német juhász",
+   "accepted_names": [
+    "német juhász",
+    "német-juhász",
+    "németjuhász",
+    "german shepherd",
+    "german-shepherd",
+    "germanshepherd",
+    "juhász",
+    "juhasz"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/nemet-juhasz.webp"
+  },
+  {
+   "id": 4,
+   "slug": "francia-bulldog",
+   "name": "Francia bulldog",
+   "accepted_names": [
+    "francia bulldog",
+    "francia-bulldog",
+    "franciabulldog",
+    "french bulldog",
+    "french-bulldog",
+    "frenchbulldog"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/francia-bulldog.webp"
+  },
+  {
+   "id": 5,
+   "slug": "angol-bulldog",
+   "name": "Angol bulldog",
+   "accepted_names": [
+    "angol bulldog",
+    "angol-bulldog",
+    "angolbulldog",
+    "bulldog",
+    "english bulldog",
+    "english-bulldog",
+    "englishbulldog"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/angol-bulldog.webp"
+  },
+  {
+   "id": 6,
+   "slug": "uszkar",
+   "name": "Uszkár",
+   "accepted_names": [
+    "uszkár",
+    "pudli",
+    "poodle"
+   ],
+   "coat_type": "curly",
+   "grooming_procedure": "clipping",
+   "image": "images/uszkar.webp"
+  },
+  {
+   "id": 7,
+   "slug": "beagle",
+   "name": "Beagle",
+   "accepted_names": [
+    "beagle",
+    "bígl",
+    "bigli"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/beagle.webp"
+  },
+  {
+   "id": 8,
+   "slug": "rottweiler",
+   "name": "Rottweiler",
+   "accepted_names": [
+    "rottweiler",
+    "rotti"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/rottweiler.webp"
+  },
+  {
+   "id": 9,
+   "slug": "yorkshire-terrier",
+   "name": "Yorkshire terrier",
+   "accepted_names": [
+    "yorkshire terrier",
+    "yorkshire-terrier",
+    "yorkshireterrier",
+    "yorki",
+    "yorkshire"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/yorkshire-terrier.webp"
+  },
+  {
+   "id": 10,
+   "slug": "dobermann",
+   "name": "Dobermann",
+   "accepted_names": [
+    "dobermann",
+    "doberman",
+    "dobermann pinscher",
+    "dobermann-pinscher",
+    "dobermannpinscher"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/dobermann.webp"
+  },
+  {
+   "id": 11,
+   "slug": "boxer",
+   "name": "Boxer",
+   "accepted_names": [
+    "boxer",
+    "német boxer",
+    "német-boxer",
+    "németboxer"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/boxer.webp"
+  },
+  {
+   "id": 12,
+   "slug": "tacsko-rovidszoru",
+   "name": "Rövidszőrű tacskó",
+   "accepted_names": [
+    "rövidszőrű tacskó",
+    "rövidszőrű-tacskó",
+    "rövidszőrűtacskó",
+    "tacskó",
+    "tacsko",
+    "tacsi",
+    "dachshund",
+    "simaszőrű tacskó",
+    "simaszőrű-tacskó",
+    "simaszőrűtacskó"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/tacsko-rovidszoru.webp"
+  },
+  {
+   "id": 13,
+   "slug": "tacsko-drotszoru",
+   "name": "Drótszőrű tacskó",
+   "accepted_names": [
+    "drótszőrű tacskó",
+    "drótszőrű-tacskó",
+    "drótszőrűtacskó",
+    "drótszőrű tacsko",
+    "drótszőrű-tacsko",
+    "drótszőrűtacsko",
+    "wirehaired dachshund",
+    "wirehaired-dachshund",
+    "wirehaireddachshund"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/tacsko-drotszoru.webp"
+  },
+  {
+   "id": 14,
+   "slug": "tacsko-hosszuszoru",
+   "name": "Hosszúszőrű tacskó",
+   "accepted_names": [
+    "hosszúszőrű tacskó",
+    "hosszúszőrű-tacskó",
+    "hosszúszőrűtacskó",
+    "longhaired dachshund",
+    "longhaired-dachshund",
+    "longhaireddachshund"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/tacsko-hosszuszoru.webp"
+  },
+  {
+   "id": 15,
+   "slug": "siberian-husky",
+   "name": "Szibériai husky",
+   "accepted_names": [
+    "szibériai husky",
+    "szibériai-husky",
+    "szibériaihusky",
+    "husky",
+    "siberian husky",
+    "siberian-husky",
+    "siberianhusky"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/siberian-husky.webp"
+  },
+  {
+   "id": 16,
+   "slug": "shih-tzu",
+   "name": "Shih tzu",
+   "accepted_names": [
+    "shih tzu",
+    "shih-tzu",
+    "shihtzu",
+    "shitzu",
+    "si cu",
+    "si-cu",
+    "sicu"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/shih-tzu.webp"
+  },
+  {
+   "id": 17,
+   "slug": "chihuahua",
+   "name": "Chihuahua",
+   "accepted_names": [
+    "chihuahua",
+    "csivava",
+    "csihuahua"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/chihuahua.webp"
+  },
+  {
+   "id": 18,
+   "slug": "maltai-selyemkutya",
+   "name": "Máltai selyemkutya",
+   "accepted_names": [
+    "máltai selyemkutya",
+    "máltai-selyemkutya",
+    "máltaiselyemkutya",
+    "máltai",
+    "maltai",
+    "maltese"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/maltai-selyemkutya.webp"
+  },
+  {
+   "id": 19,
+   "slug": "mopsz",
+   "name": "Mopsz",
+   "accepted_names": [
+    "mopsz",
+    "pug"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/mopsz.webp"
+  },
+  {
+   "id": 20,
+   "slug": "cavalier-king-charles-spaniel",
+   "name": "Cavalier King Charles spániel",
+   "accepted_names": [
+    "cavalier king charles spániel",
+    "cavalier-king-charles-spániel",
+    "cavalierkingcharlesspániel",
+    "cavalier",
+    "cavalier king charles",
+    "cavalier-king-charles",
+    "cavalierkingcharles",
+    "cavalier king charles spaniel",
+    "cavalier-king-charles-spaniel",
+    "cavalierkingcharlesspaniel"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/cavalier-king-charles-spaniel.webp"
+  },
+  {
+   "id": 21,
+   "slug": "cocker-spaniel",
+   "name": "Cocker spániel",
+   "accepted_names": [
+    "cocker spániel",
+    "cocker-spániel",
+    "cockerspániel",
+    "angol cocker spániel",
+    "angol-cocker-spániel",
+    "angolcockerspániel",
+    "cocker",
+    "cocker spaniel",
+    "cocker-spaniel",
+    "cockerspaniel"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "clipping",
+   "image": "images/cocker-spaniel.webp"
+  },
+  {
+   "id": 22,
+   "slug": "border-collie",
+   "name": "Border collie",
+   "accepted_names": [
+    "border collie",
+    "border-collie",
+    "bordercollie",
+    "border kolli",
+    "border-kolli",
+    "borderkolli"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/border-collie.webp"
+  },
+  {
+   "id": 23,
+   "slug": "pomeraniai-torpespicc",
+   "name": "Pomerániai törpespicc",
+   "accepted_names": [
+    "pomerániai törpespicc",
+    "pomerániai-törpespicc",
+    "pomerániaitörpespicc",
+    "törpespicc",
+    "pomerániai",
+    "pomeranian",
+    "pomi"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/pomeraniai-torpespicc.webp"
+  },
+  {
+   "id": 24,
+   "slug": "bichon-frise",
+   "name": "Bichon frisé",
+   "accepted_names": [
+    "bichon frisé",
+    "bichon-frisé",
+    "bichonfrisé",
+    "bichon frise",
+    "bichon-frise",
+    "bichonfrise",
+    "bichon"
+   ],
+   "coat_type": "curly",
+   "grooming_procedure": "clipping",
+   "image": "images/bichon-frise.webp"
+  },
+  {
+   "id": 25,
+   "slug": "boston-terrier",
+   "name": "Boston terrier",
+   "accepted_names": [
+    "boston terrier",
+    "boston-terrier",
+    "bostonterrier",
+    "boston"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/boston-terrier.webp"
+  },
+  {
+   "id": 26,
+   "slug": "bernathegyi",
+   "name": "Bernáthegyi",
+   "accepted_names": [
+    "bernáthegyi",
+    "bernhardiner",
+    "saint bernard",
+    "saint-bernard",
+    "saintbernard",
+    "bernáthegyi kutya",
+    "bernáthegyi-kutya",
+    "bernáthegyikutya"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/bernathegyi.webp"
+  },
+  {
+   "id": 27,
+   "slug": "berni-pasztorkutya",
+   "name": "Berni pásztorkutya",
+   "accepted_names": [
+    "berni pásztorkutya",
+    "berni-pásztorkutya",
+    "bernipásztorkutya",
+    "berni",
+    "berni hegyi kutya",
+    "berni-hegyi-kutya",
+    "bernihegyikutya",
+    "bernese mountain dog",
+    "bernese-mountain-dog",
+    "bernesemountaindog"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/berni-pasztorkutya.webp"
+  },
+  {
+   "id": 28,
+   "slug": "akita-inu",
+   "name": "Akita inu",
+   "accepted_names": [
+    "akita inu",
+    "akita-inu",
+    "akitainu",
+    "akita",
+    "japán akita",
+    "japán-akita",
+    "japánakita"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/akita-inu.webp"
+  },
+  {
+   "id": 29,
+   "slug": "shiba-inu",
+   "name": "Shiba inu",
+   "accepted_names": [
+    "shiba inu",
+    "shiba-inu",
+    "shibainu",
+    "shiba",
+    "siba inu",
+    "siba-inu",
+    "sibainu"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/shiba-inu.webp"
+  },
+  {
+   "id": 30,
+   "slug": "chow-chow",
+   "name": "Chow chow",
+   "accepted_names": [
+    "chow chow",
+    "chow-chow",
+    "chowchow",
+    "csau csau",
+    "csau-csau",
+    "csaucsau",
+    "csau"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/chow-chow.webp"
+  },
+  {
+   "id": 31,
+   "slug": "szamojed",
+   "name": "Szamojéd",
+   "accepted_names": [
+    "szamojéd",
+    "szamojed",
+    "samoyed"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/szamojed.webp"
+  },
+  {
+   "id": 32,
+   "slug": "alaszkai-malamut",
+   "name": "Alaszkai malamut",
+   "accepted_names": [
+    "alaszkai malamut",
+    "alaszkai-malamut",
+    "alaszkaimalamut",
+    "malamut",
+    "alaskan malamute",
+    "alaskan-malamute",
+    "alaskanmalamute"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/alaszkai-malamut.webp"
+  },
+  {
+   "id": 33,
+   "slug": "welsh-corgi-pembroke",
+   "name": "Welsh corgi pembroke",
+   "accepted_names": [
+    "welsh corgi pembroke",
+    "welsh-corgi-pembroke",
+    "welshcorgipembroke",
+    "corgi",
+    "pembroke",
+    "welsh corgi",
+    "welsh-corgi",
+    "welshcorgi"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/welsh-corgi-pembroke.webp"
+  },
+  {
+   "id": 34,
+   "slug": "dalmata",
+   "name": "Dalmata",
+   "accepted_names": [
+    "dalmata",
+    "dalmata kutya",
+    "dalmata-kutya",
+    "dalmatakutya",
+    "dalmatian",
+    "dalmáciai"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/dalmata.webp"
+  },
+  {
+   "id": 35,
+   "slug": "magyar-vizsla",
+   "name": "Magyar vizsla (rövidszőrű)",
+   "accepted_names": [
+    "magyar vizsla",
+    "magyar-vizsla",
+    "magyarvizsla",
+    "vizsla",
+    "rövidszőrű magyar vizsla",
+    "rövidszőrű-magyar-vizsla",
+    "rövidszőrűmagyarvizsla",
+    "sárga vizsla",
+    "sárga-vizsla",
+    "sárgavizsla"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/magyar-vizsla.webp"
+  },
+  {
+   "id": 36,
+   "slug": "magyar-vizsla-drotszoru",
+   "name": "Drótszőrű magyar vizsla",
+   "accepted_names": [
+    "drótszőrű magyar vizsla",
+    "drótszőrű-magyar-vizsla",
+    "drótszőrűmagyarvizsla",
+    "drótszőrű vizsla",
+    "drótszőrű-vizsla",
+    "drótszőrűvizsla",
+    "drotszoru vizsla",
+    "drotszoru-vizsla",
+    "drotszoruvizsla"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/magyar-vizsla-drotszoru.webp"
+  },
+  {
+   "id": 37,
+   "slug": "weimari-vizsla",
+   "name": "Weimari vizsla",
+   "accepted_names": [
+    "weimari vizsla",
+    "weimari-vizsla",
+    "weimarivizsla",
+    "weimaraner",
+    "weimari"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/weimari-vizsla.webp"
+  },
+  {
+   "id": 38,
+   "slug": "komondor",
+   "name": "Komondor",
+   "accepted_names": [
+    "komondor"
+   ],
+   "coat_type": "corded",
+   "grooming_procedure": "cord_care",
+   "image": "images/komondor.webp"
+  },
+  {
+   "id": 39,
+   "slug": "puli",
+   "name": "Puli",
+   "accepted_names": [
+    "puli"
+   ],
+   "coat_type": "corded",
+   "grooming_procedure": "cord_care",
+   "image": "images/puli.webp"
+  },
+  {
+   "id": 40,
+   "slug": "pumi",
+   "name": "Pumi",
+   "accepted_names": [
+    "pumi"
+   ],
+   "coat_type": "curly",
+   "grooming_procedure": "clipping",
+   "image": "images/pumi.webp"
+  },
+  {
+   "id": 41,
+   "slug": "mudi",
+   "name": "Mudi",
+   "accepted_names": [
+    "mudi"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/mudi.webp"
+  },
+  {
+   "id": 42,
+   "slug": "kuvasz",
+   "name": "Kuvasz",
+   "accepted_names": [
+    "kuvasz"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/kuvasz.webp"
+  },
+  {
+   "id": 43,
+   "slug": "airedale-terrier",
+   "name": "Airedale terrier",
+   "accepted_names": [
+    "airedale terrier",
+    "airedale-terrier",
+    "airedaleterrier",
+    "airedale"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/airedale-terrier.webp"
+  },
+  {
+   "id": 44,
+   "slug": "foxterrier-drotszoru",
+   "name": "Drótszőrű foxterrier",
+   "accepted_names": [
+    "drótszőrű foxterrier",
+    "drótszőrű-foxterrier",
+    "drótszőrűfoxterrier",
+    "foxterrier",
+    "fox terrier",
+    "fox-terrier",
+    "wire fox terrier",
+    "wire-fox-terrier",
+    "wirefoxterrier",
+    "foxi"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/foxterrier-drotszoru.webp"
+  },
+  {
+   "id": 45,
+   "slug": "foxterrier-simaszoru",
+   "name": "Simaszőrű foxterrier",
+   "accepted_names": [
+    "simaszőrű foxterrier",
+    "simaszőrű-foxterrier",
+    "simaszőrűfoxterrier",
+    "smooth fox terrier",
+    "smooth-fox-terrier",
+    "smoothfoxterrier"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/foxterrier-simaszoru.webp"
+  },
+  {
+   "id": 46,
+   "slug": "west-highland-white-terrier",
+   "name": "West highland white terrier",
+   "accepted_names": [
+    "west highland white terrier",
+    "west-highland-white-terrier",
+    "westhighlandwhiteterrier",
+    "westie",
+    "west highland terrier",
+    "west-highland-terrier",
+    "westhighlandterrier",
+    "west highland",
+    "west-highland",
+    "westhighland"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/west-highland-white-terrier.webp"
+  },
+  {
+   "id": 47,
+   "slug": "skot-terrier",
+   "name": "Skót terrier",
+   "accepted_names": [
+    "skót terrier",
+    "skót-terrier",
+    "skótterrier",
+    "scottish terrier",
+    "scottish-terrier",
+    "scottishterrier",
+    "scotty"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/skot-terrier.webp"
+  },
+  {
+   "id": 48,
+   "slug": "cairn-terrier",
+   "name": "Cairn terrier",
+   "accepted_names": [
+    "cairn terrier",
+    "cairn-terrier",
+    "cairnterrier",
+    "cairn"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/cairn-terrier.webp"
+  },
+  {
+   "id": 49,
+   "slug": "border-terrier",
+   "name": "Border terrier",
+   "accepted_names": [
+    "border terrier",
+    "border-terrier",
+    "borderterrier"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/border-terrier.webp"
+  },
+  {
+   "id": 50,
+   "slug": "jack-russell-terrier",
+   "name": "Jack Russell terrier",
+   "accepted_names": [
+    "jack russell terrier",
+    "jack-russell-terrier",
+    "jackrussellterrier",
+    "jack russell",
+    "jack-russell",
+    "jackrussell",
+    "jack russel",
+    "jack-russel",
+    "jackrussel"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/jack-russell-terrier.webp"
+  },
+  {
+   "id": 51,
+   "slug": "staffordshire-bullterrier",
+   "name": "Staffordshire bullterrier",
+   "accepted_names": [
+    "staffordshire bullterrier",
+    "staffordshire-bullterrier",
+    "staffordshirebullterrier",
+    "staffordshire bull terrier",
+    "staffordshire-bull-terrier",
+    "staffi",
+    "stafford"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/staffordshire-bullterrier.webp"
+  },
+  {
+   "id": 52,
+   "slug": "amerikai-staffordshire-terrier",
+   "name": "Amerikai staffordshire terrier",
+   "accepted_names": [
+    "amerikai staffordshire terrier",
+    "amerikai-staffordshire-terrier",
+    "amerikaistaffordshireterrier",
+    "amstaff",
+    "american staffordshire terrier",
+    "american-staffordshire-terrier",
+    "americanstaffordshireterrier"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/amerikai-staffordshire-terrier.webp"
+  },
+  {
+   "id": 53,
+   "slug": "bullterrier",
+   "name": "Bullterrier",
+   "accepted_names": [
+    "bullterrier",
+    "angol bullterrier",
+    "angol-bullterrier",
+    "angolbullterrier"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/bullterrier.webp"
+  },
+  {
+   "id": 54,
+   "slug": "torpe-schnauzer",
+   "name": "Törpe schnauzer",
+   "accepted_names": [
+    "törpe schnauzer",
+    "törpe-schnauzer",
+    "törpeschnauzer",
+    "miniature schnauzer",
+    "miniature-schnauzer",
+    "miniatureschnauzer",
+    "mini schnauzer",
+    "mini-schnauzer",
+    "minischnauzer"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/torpe-schnauzer.webp"
+  },
+  {
+   "id": 55,
+   "slug": "kozepes-schnauzer",
+   "name": "Közepes schnauzer",
+   "accepted_names": [
+    "közepes schnauzer",
+    "közepes-schnauzer",
+    "közepesschnauzer",
+    "schnauzer",
+    "standard schnauzer",
+    "standard-schnauzer",
+    "standardschnauzer",
+    "normál schnauzer",
+    "normál-schnauzer",
+    "normálschnauzer"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/kozepes-schnauzer.webp"
+  },
+  {
+   "id": 56,
+   "slug": "orias-schnauzer",
+   "name": "Óriás schnauzer",
+   "accepted_names": [
+    "óriás schnauzer",
+    "óriás-schnauzer",
+    "óriásschnauzer",
+    "giant schnauzer",
+    "giant-schnauzer",
+    "giantschnauzer"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/orias-schnauzer.webp"
+  },
+  {
+   "id": 57,
+   "slug": "ir-terrier",
+   "name": "Ír terrier",
+   "accepted_names": [
+    "ír terrier",
+    "ír-terrier",
+    "írterrier",
+    "irish terrier",
+    "irish-terrier",
+    "irishterrier"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/ir-terrier.webp"
+  },
+  {
+   "id": 58,
+   "slug": "welsh-terrier",
+   "name": "Welsh terrier",
+   "accepted_names": [
+    "welsh terrier",
+    "welsh-terrier",
+    "welshterrier"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/welsh-terrier.webp"
+  },
+  {
+   "id": 59,
+   "slug": "lakeland-terrier",
+   "name": "Lakeland terrier",
+   "accepted_names": [
+    "lakeland terrier",
+    "lakeland-terrier",
+    "lakelandterrier",
+    "lakeland"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/lakeland-terrier.webp"
+  },
+  {
+   "id": 60,
+   "slug": "brusszeli-griffon",
+   "name": "Brüsszeli griffon",
+   "accepted_names": [
+    "brüsszeli griffon",
+    "brüsszeli-griffon",
+    "brüsszeligriffon",
+    "griffon",
+    "brussels griffon",
+    "brussels-griffon",
+    "brusselsgriffon"
+   ],
+   "coat_type": "wire",
+   "grooming_procedure": "hand_stripping",
+   "image": "images/brusszeli-griffon.webp"
+  },
+  {
+   "id": 61,
+   "slug": "ir-szetter",
+   "name": "Ír szetter",
+   "accepted_names": [
+    "ír szetter",
+    "ír-szetter",
+    "írszetter",
+    "vörös szetter",
+    "vörös-szetter",
+    "vörösszetter",
+    "irish setter",
+    "irish-setter",
+    "irishsetter",
+    "irish red setter",
+    "irish-red-setter",
+    "irishredsetter"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/ir-szetter.webp"
+  },
+  {
+   "id": 62,
+   "slug": "angol-szetter",
+   "name": "Angol szetter",
+   "accepted_names": [
+    "angol szetter",
+    "angol-szetter",
+    "angolszetter",
+    "english setter",
+    "english-setter",
+    "englishsetter"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/angol-szetter.webp"
+  },
+  {
+   "id": 63,
+   "slug": "gordon-szetter",
+   "name": "Gordon szetter",
+   "accepted_names": [
+    "gordon szetter",
+    "gordon-szetter",
+    "gordonszetter",
+    "gordon setter",
+    "gordon-setter",
+    "gordonsetter"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/gordon-szetter.webp"
+  },
+  {
+   "id": 64,
+   "slug": "angol-springer-spaniel",
+   "name": "Angol springer spániel",
+   "accepted_names": [
+    "angol springer spániel",
+    "angol-springer-spániel",
+    "angolspringerspániel",
+    "springer spániel",
+    "springer-spániel",
+    "springerspániel",
+    "springer",
+    "english springer spaniel",
+    "english-springer-spaniel",
+    "englishspringerspaniel"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "clipping",
+   "image": "images/angol-springer-spaniel.webp"
+  },
+  {
+   "id": 65,
+   "slug": "afgan-agar",
+   "name": "Afgán agár",
+   "accepted_names": [
+    "afgán agár",
+    "afgán-agár",
+    "afgánagár",
+    "afgán",
+    "afghan hound",
+    "afghan-hound",
+    "afghanhound",
+    "afghan"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/afgan-agar.webp"
+  },
+  {
+   "id": 66,
+   "slug": "angol-agar",
+   "name": "Angol agár",
+   "accepted_names": [
+    "angol agár",
+    "angol-agár",
+    "angolagár",
+    "agár",
+    "greyhound"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/angol-agar.webp"
+  },
+  {
+   "id": 67,
+   "slug": "whippet",
+   "name": "Whippet",
+   "accepted_names": [
+    "whippet",
+    "angol agárkölyök",
+    "angol-agárkölyök",
+    "angolagárkölyök"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/whippet.webp"
+  },
+  {
+   "id": 68,
+   "slug": "szaluki",
+   "name": "Szaluki",
+   "accepted_names": [
+    "szaluki",
+    "saluki"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/szaluki.webp"
+  },
+  {
+   "id": 69,
+   "slug": "magyar-agar",
+   "name": "Magyar agár",
+   "accepted_names": [
+    "magyar agár",
+    "magyar-agár",
+    "magyaragár"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/magyar-agar.webp"
+  },
+  {
+   "id": 70,
+   "slug": "basset-hound",
+   "name": "Basset hound",
+   "accepted_names": [
+    "basset hound",
+    "basset-hound",
+    "bassethound",
+    "basset",
+    "baset"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/basset-hound.webp"
+  },
+  {
+   "id": 71,
+   "slug": "vereb",
+   "name": "Véreb",
+   "accepted_names": [
+    "véreb",
+    "bloodhound",
+    "szent hubertusz véreb",
+    "szent-hubertusz-véreb",
+    "szenthubertuszvéreb"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/vereb.webp"
+  },
+  {
+   "id": 72,
+   "slug": "rhodesiai-ridgeback",
+   "name": "Rhodesiai ridgeback",
+   "accepted_names": [
+    "rhodesiai ridgeback",
+    "rhodesiai-ridgeback",
+    "rhodesiairidgeback",
+    "ridgeback",
+    "rhodesian ridgeback",
+    "rhodesian-ridgeback",
+    "rhodesianridgeback"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/rhodesiai-ridgeback.webp"
+  },
+  {
+   "id": 73,
+   "slug": "cane-corso",
+   "name": "Cane corso",
+   "accepted_names": [
+    "cane corso",
+    "cane-corso",
+    "canecorso",
+    "olasz masztiff",
+    "olasz-masztiff",
+    "olaszmasztiff",
+    "kane korzo",
+    "kane-korzo",
+    "kanekorzo"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/cane-corso.webp"
+  },
+  {
+   "id": 74,
+   "slug": "nemet-dog",
+   "name": "Német dog",
+   "accepted_names": [
+    "német dog",
+    "német-dog",
+    "németdog",
+    "dog",
+    "great dane",
+    "great-dane",
+    "greatdane"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/nemet-dog.webp"
+  },
+  {
+   "id": 75,
+   "slug": "angol-masztiff",
+   "name": "Angol masztiff",
+   "accepted_names": [
+    "angol masztiff",
+    "angol-masztiff",
+    "angolmasztiff",
+    "masztiff",
+    "mastiff",
+    "english mastiff",
+    "english-mastiff",
+    "englishmastiff"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/angol-masztiff.webp"
+  },
+  {
+   "id": 76,
+   "slug": "ujfundlandi",
+   "name": "Újfundlandi",
+   "accepted_names": [
+    "újfundlandi",
+    "newfoundland",
+    "újfundlandi kutya",
+    "újfundlandi-kutya",
+    "újfundlandikutya"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/ujfundlandi.webp"
+  },
+  {
+   "id": 77,
+   "slug": "leonbergi",
+   "name": "Leonbergi",
+   "accepted_names": [
+    "leonbergi",
+    "leonberger"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/leonbergi.webp"
+  },
+  {
+   "id": 78,
+   "slug": "pireneusi-hegyi-kutya",
+   "name": "Pireneusi hegyi kutya",
+   "accepted_names": [
+    "pireneusi hegyi kutya",
+    "pireneusi-hegyi-kutya",
+    "pireneusihegyikutya",
+    "pireneusi",
+    "great pyrenees",
+    "great-pyrenees",
+    "greatpyrenees"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/pireneusi-hegyi-kutya.webp"
+  },
+  {
+   "id": 79,
+   "slug": "nagy-svajci-hegyi-kutya",
+   "name": "Nagy svájci hegyi kutya",
+   "accepted_names": [
+    "nagy svájci hegyi kutya",
+    "nagy-svájci-hegyi-kutya",
+    "nagysvájcihegyikutya",
+    "svájci hegyi kutya",
+    "svájci-hegyi-kutya",
+    "svájcihegyikutya",
+    "great swiss mountain dog",
+    "great-swiss-mountain-dog",
+    "greatswissmountaindog"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/nagy-svajci-hegyi-kutya.webp"
+  },
+  {
+   "id": 80,
+   "slug": "collie",
+   "name": "Collie (hosszúszőrű)",
+   "accepted_names": [
+    "collie",
+    "hosszúszőrű collie",
+    "hosszúszőrű-collie",
+    "hosszúszőrűcollie",
+    "skót juhászkutya",
+    "skót-juhászkutya",
+    "skótjuhászkutya",
+    "lassie",
+    "collie hosszúszőrű",
+    "collie-hosszúszőrű",
+    "colliehosszúszőrű"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/collie.webp"
+  },
+  {
+   "id": 81,
+   "slug": "shetlandi-juhaszkutya",
+   "name": "Shetlandi juhászkutya",
+   "accepted_names": [
+    "shetlandi juhászkutya",
+    "shetlandi-juhászkutya",
+    "shetlandijuhászkutya",
+    "sheltie",
+    "shetland sheepdog",
+    "shetland-sheepdog",
+    "shetlandsheepdog"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/shetlandi-juhaszkutya.webp"
+  },
+  {
+   "id": 82,
+   "slug": "ausztral-juhaszkutya",
+   "name": "Ausztrál juhászkutya",
+   "accepted_names": [
+    "ausztrál juhászkutya",
+    "ausztrál-juhászkutya",
+    "ausztráljuhászkutya",
+    "australian shepherd",
+    "australian-shepherd",
+    "australianshepherd",
+    "aussie"
+   ],
+   "coat_type": "double",
+   "grooming_procedure": "undercoat_removal",
+   "image": "images/ausztral-juhaszkutya.webp"
+  },
+  {
+   "id": 83,
+   "slug": "belga-malinois",
+   "name": "Belga juhászkutya (malinois)",
+   "accepted_names": [
+    "belga juhászkutya",
+    "belga-juhászkutya",
+    "belgajuhászkutya",
+    "malinois",
+    "belga malinois",
+    "belga-malinois",
+    "belgamalinois",
+    "belga juhász",
+    "belga-juhász",
+    "belgajuhász"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/belga-malinois.webp"
+  },
+  {
+   "id": 84,
+   "slug": "old-english-sheepdog",
+   "name": "Old english sheepdog",
+   "accepted_names": [
+    "old english sheepdog",
+    "old-english-sheepdog",
+    "oldenglishsheepdog",
+    "bobtail",
+    "óangol juhászkutya",
+    "óangol-juhászkutya",
+    "óangoljuhászkutya"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/old-english-sheepdog.webp"
+  },
+  {
+   "id": 85,
+   "slug": "papillon",
+   "name": "Papillon",
+   "accepted_names": [
+    "papillon",
+    "pillangókutya",
+    "pillangó spániel",
+    "pillangó-spániel",
+    "pillangóspániel"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/papillon.webp"
+  },
+  {
+   "id": 86,
+   "slug": "japan-csin",
+   "name": "Japán csin",
+   "accepted_names": [
+    "japán csin",
+    "japán-csin",
+    "japáncsin",
+    "japan chin",
+    "japan-chin",
+    "japanchin",
+    "csin"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/japan-csin.webp"
+  },
+  {
+   "id": 87,
+   "slug": "pekingi-palotakutya",
+   "name": "Pekingi palotakutya",
+   "accepted_names": [
+    "pekingi palotakutya",
+    "pekingi-palotakutya",
+    "pekingipalotakutya",
+    "pekingi",
+    "pekingese",
+    "pekinese"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/pekingi-palotakutya.webp"
+  },
+  {
+   "id": 88,
+   "slug": "tibeti-spaniel",
+   "name": "Tibeti spániel",
+   "accepted_names": [
+    "tibeti spániel",
+    "tibeti-spániel",
+    "tibetispániel",
+    "tibetan spaniel",
+    "tibetan-spaniel",
+    "tibetanspaniel"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/tibeti-spaniel.webp"
+  },
+  {
+   "id": 89,
+   "slug": "lhasa-apso",
+   "name": "Lhasa apso",
+   "accepted_names": [
+    "lhasa apso",
+    "lhasa-apso",
+    "lhasaapso",
+    "lhasa",
+    "lásza apszó",
+    "lásza-apszó",
+    "lászaapszó"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/lhasa-apso.webp"
+  },
+  {
+   "id": 90,
+   "slug": "tibeti-terrier",
+   "name": "Tibeti terrier",
+   "accepted_names": [
+    "tibeti terrier",
+    "tibeti-terrier",
+    "tibetiterrier",
+    "tibetan terrier",
+    "tibetan-terrier",
+    "tibetanterrier"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/tibeti-terrier.webp"
+  },
+  {
+   "id": 91,
+   "slug": "havanai-selyemkutya",
+   "name": "Havanai selyemkutya",
+   "accepted_names": [
+    "havanai selyemkutya",
+    "havanai-selyemkutya",
+    "havanaiselyemkutya",
+    "havanese",
+    "havanai"
+   ],
+   "coat_type": "long",
+   "grooming_procedure": "long_coat_care",
+   "image": "images/havanai-selyemkutya.webp"
+  },
+  {
+   "id": 92,
+   "slug": "bolognai",
+   "name": "Bolognai",
+   "accepted_names": [
+    "bolognai",
+    "bolognese",
+    "bolognai bichon",
+    "bolognai-bichon",
+    "bolognaibichon"
+   ],
+   "coat_type": "curly",
+   "grooming_procedure": "clipping",
+   "image": "images/bolognai.webp"
+  },
+  {
+   "id": 93,
+   "slug": "lagotto-romagnolo",
+   "name": "Lagotto romagnolo",
+   "accepted_names": [
+    "lagotto romagnolo",
+    "lagotto-romagnolo",
+    "lagottoromagnolo",
+    "lagotto"
+   ],
+   "coat_type": "curly",
+   "grooming_procedure": "clipping",
+   "image": "images/lagotto-romagnolo.webp"
+  },
+  {
+   "id": 94,
+   "slug": "portugal-vizikutya",
+   "name": "Portugál vízikutya",
+   "accepted_names": [
+    "portugál vízikutya",
+    "portugál-vízikutya",
+    "portugálvízikutya",
+    "portuguese water dog",
+    "portuguese-water-dog",
+    "portuguesewaterdog",
+    "portugál vizikutya",
+    "portugál-vizikutya",
+    "portugálvizikutya"
+   ],
+   "coat_type": "curly",
+   "grooming_procedure": "clipping",
+   "image": "images/portugal-vizikutya.webp"
+  },
+  {
+   "id": 95,
+   "slug": "kerry-blue-terrier",
+   "name": "Kerry blue terrier",
+   "accepted_names": [
+    "kerry blue terrier",
+    "kerry-blue-terrier",
+    "kerryblueterrier",
+    "kerry blue",
+    "kerry-blue",
+    "kerryblue"
+   ],
+   "coat_type": "curly",
+   "grooming_procedure": "clipping",
+   "image": "images/kerry-blue-terrier.webp"
+  },
+  {
+   "id": 96,
+   "slug": "bedlington-terrier",
+   "name": "Bedlington terrier",
+   "accepted_names": [
+    "bedlington terrier",
+    "bedlington-terrier",
+    "bedlingtonterrier",
+    "bedlington"
+   ],
+   "coat_type": "curly",
+   "grooming_procedure": "clipping",
+   "image": "images/bedlington-terrier.webp"
+  },
+  {
+   "id": 97,
+   "slug": "kinai-meztelen-kutya",
+   "name": "Kínai meztelen kutya",
+   "accepted_names": [
+    "kínai meztelen kutya",
+    "kínai-meztelen-kutya",
+    "kínaimeztelenkutya",
+    "kínai meztelen",
+    "kínai-meztelen",
+    "kínaimeztelen",
+    "chinese crested",
+    "chinese-crested",
+    "chinesecrested",
+    "crested"
+   ],
+   "coat_type": "hairless",
+   "grooming_procedure": "skin_care",
+   "image": "images/kinai-meztelen-kutya.webp"
+  },
+  {
+   "id": 98,
+   "slug": "mexikoi-meztelen-kutya",
+   "name": "Mexikói meztelen kutya",
+   "accepted_names": [
+    "mexikói meztelen kutya",
+    "mexikói-meztelen-kutya",
+    "mexikóimeztelenkutya",
+    "xoloitzcuintle",
+    "xolo",
+    "mexikói szőrtelen kutya",
+    "mexikói-szőrtelen-kutya",
+    "mexikóiszőrtelenkutya"
+   ],
+   "coat_type": "hairless",
+   "grooming_procedure": "skin_care",
+   "image": "images/mexikoi-meztelen-kutya.webp"
+  },
+  {
+   "id": 99,
+   "slug": "basenji",
+   "name": "Basenji",
+   "accepted_names": [
+    "basenji"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/basenji.webp"
+  },
+  {
+   "id": 100,
+   "slug": "torpepincser",
+   "name": "Törpepincser",
+   "accepted_names": [
+    "törpepincser",
+    "miniature pinscher",
+    "miniature-pinscher",
+    "miniaturepinscher",
+    "minpin",
+    "törpe pinscher",
+    "törpe-pinscher",
+    "törpepinscher"
+   ],
+   "coat_type": "short",
+   "grooming_procedure": "brush_bath",
+   "image": "images/torpepincser.webp"
+  }
+ ]
+}

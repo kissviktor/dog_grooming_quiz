@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kutyafajta-adatbázis szerkesztő</title>
+<style>
+:root{color-scheme:light dark;--bg:#f7f6f2;--card:#fff;--tx:#1f2328;--mu:#6b7280;--bd:#d9d6cc;--ac:#2f6f5e;--act:#fff;--dg:#b3261e;--hi:#e6f0ec}
+@media (prefers-color-scheme:dark){:root{--bg:#161a19;--card:#1f2524;--tx:#e8ecea;--mu:#9aa5a1;--bd:#35403d;--ac:#5fb59f;--act:#0e1514;--dg:#f2877f;--hi:#26332f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,sans-serif}
+header{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--bd);background:var(--card)}
+h1{font-size:18px;margin:0 auto 0 0}h2{font-size:16px;margin:0 0 8px}
+#st{flex-basis:100%;color:var(--mu);font-size:13px}
+button,.btn{font:inherit;border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:7px 12px;border-radius:8px;cursor:pointer}
+.pri{background:var(--ac);color:var(--act);border-color:var(--ac)}
+.dg{color:var(--dg)}
+.tabs{display:flex;gap:6px;padding:10px 16px 0}
+.tab.on{background:var(--ac);color:var(--act);border-color:var(--ac)}
+main{padding:12px 16px 40px}
+.grid{display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:16px;align-items:start}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px}
+input,textarea,select{font:inherit;width:100%;padding:7px 9px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx)}
+label{display:block;margin:0 0 10px;font-size:13px;color:var(--mu)}label>*{margin-top:3px;color:var(--tx)}
+ul{list-style:none;margin:8px 0 0;padding:0;max-height:62vh;overflow:auto}
+li{padding:7px 9px;border-radius:8px;cursor:pointer;display:flex;flex-direction:column}
+li.on{background:var(--hi)}li small,.mu{color:var(--mu)}
+.pv{margin:0 0 12px}.pv img{max-width:100%;max-height:220px;border-radius:8px}
+.row{display:grid;grid-template-columns:1fr 2fr auto auto;gap:6px;align-items:center;margin-bottom:6px}
+@media(max-width:760px){.row{grid-template-columns:1fr 1fr}}
+section{margin-bottom:22px}.k{font-family:ui-monospace,monospace}
+</style>
+</head>
+<body>
+<header>
+  <h1>Kutyafajta-adatbázis szerkesztő</h1>
+  <label class="btn" style="margin:0">Megnyitás…<input id="open" type="file" accept=".json,application/json" hidden></label>
+  <button id="reload">Eredeti betöltése</button>
+  <button id="save" class="pri">Mentés (JSON letöltése)</button>
+  <div id="st">Betöltés…</div>
+</header>
+<div class="tabs"><button class="tab on" data-t="breeds">Fajták</button><button class="tab" data-t="cats">Kategóriák</button></div>
+<main>
+  <div id="v1" class="grid">
+    <div class="card">
+      <input id="q" type="search" placeholder="Keresés névre vagy névváltozatra…">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px"><span id="cnt" class="mu"></span><button id="add">+ Új fajta</button></div>
+      <ul id="ls"></ul>
+    </div>
+    <div class="card" id="ed"></div>
+  </div>
+  <div id="v2" class="card" hidden></div>
+</main>
+<script>
+const $=s=>document.querySelector(s),KEY='kf_draft';
+const norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let D,sel=null,q='',tab='breeds';
+
+function draft(){try{localStorage.setItem(KEY,JSON.stringify(D))}catch(e){}$('#st').textContent='Módosítva – a változtatások csak a letöltött fájlban maradnak meg, ne felejtsd el menteni.'}
+
+async function load(fresh){
+  let d=null;
+  if(!fresh){try{const t=localStorage.getItem(KEY);if(t)d=JSON.parse(t)}catch(e){}}
+  if(d){D=d;$('#st').textContent='Mentetlen vázlat visszatöltve a böngészőből.'}
+  else{
+    try{const r=await fetch('kutyafajtak.json');if(!r.ok)throw 0;D=await r.json();$('#st').textContent='Betöltve: kutyafajtak.json'}
+    catch(e){D={meta:{coat_types:{},grooming_procedures:{}},breeds:[]};$('#st').textContent='A kutyafajtak.json nem töltődött be automatikusan – használd a „Megnyitás…” gombot.'}
+    if(fresh){try{localStorage.removeItem(KEY)}catch(e){}}
+  }
+  sel=D.breeds[0]?.id??null;render();
+}
+
+function render(){
+  $('#v1').hidden=tab!=='breeds';$('#v2').hidden=tab!=='cats';
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.t===tab));
+  tab==='breeds'?(list(),form()):cats();
+}
+
+function list(){
+  const f=D.breeds.filter(b=>!q||[b.name,...b.accepted_names].some(n=>norm(n).includes(norm(q))));
+  $('#cnt').textContent=f.length+' / '+D.breeds.length+' fajta';
+  $('#ls').innerHTML=f.map(b=>`<li class="${b.id===sel?'on':''}" data-id="${b.id}"><b>${esc(b.name)}</b><small>${esc(D.meta.coat_types[b.coat_type]||'⚠ '+b.coat_type)}</small></li>`).join('');
+}
+
+function opts(o,v){
+  let h=Object.entries(o).map(([k,l])=>`<option value="${esc(k)}"${k===v?' selected':''}>${esc(l)}</option>`).join('');
+  if(!(v in o))h=`<option value="${esc(v)}" selected>⚠ ${esc(v)} (ismeretlen)</option>`+h;
+  return h;
+}
+
+function form(){
+  const b=D.breeds.find(x=>x.id===sel),e=$('#ed');
+  if(!b){e.innerHTML='<p class="mu">Válassz egy fajtát a listából, vagy adj hozzá újat.</p>';return}
+  e.innerHTML=`
+  <label>Név (megjelenített)<input id="f_name" value="${esc(b.name)}"></label>
+  <label>Azonosító (slug, ékezet nélkül)<input id="f_slug" value="${esc(b.slug)}"></label>
+  <label>Elfogadott nevek (soronként egy)<textarea id="f_acc" rows="7">${esc(b.accepted_names.join('\n'))}</textarea></label>
+  <label>Szőrzet típusa<select id="f_coat">${opts(D.meta.coat_types,b.coat_type)}</select></label>
+  <label>Kozmetikai eljárás<select id="f_gr">${opts(D.meta.grooming_procedures,b.grooming_procedure)}</select></label>
+  <label>Kép útvonala<input id="f_img" value="${esc(b.image)}"></label>
+  <div class="pv"><img id="pv" alt="" src="${esc(b.image)}" hidden onload="this.hidden=false;$('#nopv').hidden=true" onerror="this.hidden=true;$('#nopv').hidden=false"><span id="nopv" class="mu">Ezen az útvonalon még nincs kép.</span></div>
+  <button class="dg" id="del">Fajta törlése</button>`;
+  const on=(id,f)=>$(id).addEventListener('input',f);
+  on('#f_name',e=>{b.name=e.target.value;draft();list()});
+  on('#f_slug',e=>{const old=`images/${b.slug}.webp`;b.slug=e.target.value;if(b.image===old){b.image=`images/${b.slug}.webp`;$('#f_img').value=b.image;$('#pv').src=b.image}draft()});
+  on('#f_acc',e=>{b.accepted_names=e.target.value.split('\n').map(s=>s.trim()).filter(Boolean);draft()});
+  on('#f_coat',e=>{b.coat_type=e.target.value;draft();list()});
+  on('#f_gr',e=>{b.grooming_procedure=e.target.value;draft()});
+  on('#f_img',e=>{b.image=e.target.value;$('#pv').src=b.image;draft()});
+  $('#del').onclick=()=>{if(confirm('Biztosan törlöd: '+b.name+'?')){D.breeds=D.breeds.filter(x=>x!==b);sel=D.breeds[0]?.id??null;draft();render()}};
+}
+
+function cats(){
+  $('#v2').innerHTML=[['coat_types','coat_type','Szőrzettípusok'],['grooming_procedures','grooming_procedure','Kozmetikai eljárások']].map(([f,bf,t])=>
+  `<section><h2>${t}</h2><p class="mu" style="margin:0 0 8px;font-size:13px">Bal oldalt a kulcs (ezt tárolják a fajták), jobb oldalt a megjelenített név. A kulcs átírásakor a fajták automatikusan frissülnek.</p>`+
+  Object.entries(D.meta[f]).map(([k,l])=>`<div class="row"><input class="k" data-f="${f}" data-bf="${bf}" data-k="${esc(k)}" value="${esc(k)}" title="Kulcs"><input class="l" data-f="${f}" data-k="${esc(k)}" value="${esc(l)}" title="Megjelenített név"><small class="mu">${D.breeds.filter(b=>b[bf]===k).length} fajta</small><button class="dg x" data-f="${f}" data-bf="${bf}" data-k="${esc(k)}">✕</button></div>`).join('')+
+  `<button class="add" data-f="${f}">+ Új kategória</button></section>`).join('');
+}
+
+$('#ls').addEventListener('click',e=>{const li=e.target.closest('li');if(li){sel=+li.dataset.id;list();form()}});
+$('#q').addEventListener('input',e=>{q=e.target.value;list()});
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{tab=t.dataset.t;render()});
+$('#add').onclick=()=>{
+  const id=Math.max(0,...D.breeds.map(b=>b.id))+1,c=Object.keys(D.meta.coat_types)[0]||'',g=Object.keys(D.meta.grooming_procedures)[0]||'';
+  D.breeds.push({id,slug:'uj-fajta-'+id,name:'Új fajta',accepted_names:['új fajta'],coat_type:c,grooming_procedure:g,image:`images/uj-fajta-${id}.webp`});
+  sel=id;q='';$('#q').value='';draft();render();$('#f_name').select();
+};
+$('#v2').addEventListener('change',e=>{
+  const t=e.target;if(!t.classList.contains('k'))return;
+  const {f,bf,k}=t.dataset,n=t.value.trim();
+  if(!n||(n!==k&&n in D.meta[f])){t.value=k;return}
+  D.meta[f]=Object.fromEntries(Object.entries(D.meta[f]).map(([a,b])=>[a===k?n:a,b]));
+  D.breeds.forEach(b=>{if(b[bf]===k)b[bf]=n});draft();cats();
+});
+$('#v2').addEventListener('input',e=>{const t=e.target;if(t.classList.contains('l')){D.meta[t.dataset.f][t.dataset.k]=t.value;draft()}});
+$('#v2').addEventListener('click',e=>{
+  const t=e.target,{f,bf,k}=t.dataset;
+  if(t.classList.contains('x')){
+    const n=D.breeds.filter(b=>b[bf]===k).length;
+    if(n)return alert('Nem törölhető: '+n+' fajta még használja. Előbb rendeld át őket másik kategóriába.');
+    delete D.meta[f][k];draft();cats();
+  }
+  if(t.classList.contains('add')){let i=1;while('uj_'+i in D.meta[f])i++;D.meta[f]['uj_'+i]='Új kategória';draft();cats()}
+});
+$('#open').onchange=async e=>{
+  const fl=e.target.files[0];if(!fl)return;
+  try{const d=JSON.parse(await fl.text());if(!Array.isArray(d.breeds)||!d.meta)throw 0;D=d;sel=D.breeds[0]?.id??null;draft();$('#st').textContent='Megnyitva: '+fl.name;render()}
+  catch(x){alert('Ez nem érvényes kutyafajta-adatbázis fájl.')}
+  e.target.value='';
+};
+$('#reload').onclick=()=>{if(confirm('Eldobod a mentetlen változtatásokat, és újratöltöd a fájlt?'))load(true)};
+$('#save').onclick=()=>{
+  const seen={},dup=[],miss=[];
+  D.breeds.forEach(b=>{
+    if(!b.name||!b.accepted_names.length||!(b.coat_type in D.meta.coat_types)||!(b.grooming_procedure in D.meta.grooming_procedures))miss.push(b.name||('#'+b.id));
+    b.accepted_names.forEach(n=>{const k=norm(n).replace(/[\s-]/g,'');if(seen[k]&&seen[k]!==b.name)dup.push(`„${n}” (${seen[k]} / ${b.name})`);seen[k]=b.name});
+  });
+  let m='';
+  if(miss.length)m+='Hiányos adatú vagy ismeretlen kategóriájú fajták: '+miss.join(', ')+'\n\n';
+  if(dup.length)m+='Több fajtánál is szereplő név: '+dup.join(', ')+'\n\n';
+  if(m&&!confirm(m+'Mentsem így is?'))return;
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([JSON.stringify(D,null,1)],{type:'application/json'}));
+  a.download='kutyafajtak.json';a.click();
+  $('#st').textContent='Letöltve. Töltsd fel a repóba a régi kutyafajtak.json helyére.';
+};
+load();
+</script>
+</body>
+</html>
