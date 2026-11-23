@@ -1168,6 +1168,556 @@
    "coat_type": "hosszu",
    "grooming_procedure": "fesules",
    "image": "images/hosszuszoru-chihuahua.webp"
+  },
+  {
+   "id": 103,
+   "slug": "amerikai-akita",
+   "name": "Amerikai akita",
+   "accepted_names": [
+    "amerikai akita"
+   ],
+   "coat_type": "kettos",
+   "grooming_procedure": "fesules",
+   "image": "images/amerikai-akita.webp"
+  },
+  {
+   "id": 104,
+   "slug": "amerikai_staffordshire",
+   "name": "Amerikai staffordshire terrier",
+   "accepted_names": [
+    "amerikai staffordshire terrier"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/amerikai_staffordshire.webp"
+  },
+  {
+   "id": 105,
+   "slug": "argentin_dog",
+   "name": "Argentin dog",
+   "accepted_names": [
+    "argentin dog"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/argentin_dog.webp"
+  },
+  {
+   "id": 106,
+   "slug": "ausztral_terrier",
+   "name": "Ausztrál terrier",
+   "accepted_names": [
+    "ausztrál terrier"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/ausztral_terrier.webp"
+  },
+  {
+   "id": 107,
+   "slug": "barbet",
+   "name": "Barbet",
+   "accepted_names": [
+    "barbet",
+    "francia vízikutya"
+   ],
+   "coat_type": "nyiros",
+   "grooming_procedure": "nyiras",
+   "image": "images/barbet.webp"
+  },
+  {
+   "id": 108,
+   "slug": "belga-griffon",
+   "name": "Belga griffon",
+   "accepted_names": [
+    "belga griffon"
+   ],
+   "coat_type": "szalkas",
+   "grooming_procedure": "trimmeles",
+   "image": "images/belga-griffon.webp"
+  },
+  {
+   "id": 109,
+   "slug": "bordeauxi-dog",
+   "name": "Bordeaux-i dog",
+   "accepted_names": [
+    "bordeaux-i dog"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/bordeauxi-dog.webp"
+  },
+  {
+   "id": 110,
+   "slug": "borzoi",
+   "name": "Orosz agár",
+   "accepted_names": [
+    "borzoi",
+    "orosz agár"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/borzoi.webp"
+  },
+  {
+   "id": 111,
+   "slug": "breton_spaniel",
+   "name": "Breton spániel",
+   "accepted_names": [
+    "breton spániel",
+    "brittany"
+   ],
+   "coat_type": "vegyes",
+   "grooming_procedure": "trimmeles",
+   "image": "images/breton_spaniel.webp"
+  },
+  {
+   "id": 112,
+   "slug": "briard",
+   "name": "Briard",
+   "accepted_names": [
+    "briard",
+    "brie-i juhászkutya"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/briard.webp"
+  },
+  {
+   "id": 113,
+   "slug": "cardigan-welsh-corgi",
+   "name": "Cardigan welsh corgi",
+   "accepted_names": [
+    "cardigan welsh corgi"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/cardigan-welsh-corgi.webp"
+  },
+  {
+   "id": 114,
+   "slug": "clumber-spaniel",
+   "name": "Clumber spániel",
+   "accepted_names": [
+    "clumber spániel"
+   ],
+   "coat_type": "vegyes",
+   "grooming_procedure": "trimmeles",
+   "image": "images/clumber-spaniel.webp"
+  },
+  {
+   "id": 115,
+   "slug": "coton_de_tulear",
+   "name": "Coton de tulear",
+   "accepted_names": [
+    "coton de tulear"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/coton_de_tulear.webp"
+  },
+  {
+   "id": 116,
+   "slug": "cseh_terrier",
+   "name": "Cseh terrier",
+   "accepted_names": [
+    "cseh terrier",
+    "cesky terrier"
+   ],
+   "coat_type": "nyiros",
+   "grooming_procedure": "nyiras",
+   "image": "images/cseh_terrier.webp"
+  },
+  {
+   "id": 117,
+   "slug": "csehszlovak_farkaskutya",
+   "name": "Csehszlovák farkaskutya",
+   "accepted_names": [
+    "csehszlovák farkaskutya"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/csehszlovak_farkaskutya.webp"
+  },
+  {
+   "id": 118,
+   "slug": "dandie_dinmont_terrier",
+   "name": "Dandie dinmont terrier",
+   "accepted_names": [
+    "dandie dinmont terrier"
+   ],
+   "coat_type": "szalkas",
+   "grooming_procedure": "trimmeles",
+   "image": "images/dandie_dinmont_terrier.webp"
+  },
+  {
+   "id": 119,
+   "slug": "drotszoru-nemet-vizsla",
+   "name": "Drótszőrű német vizsla",
+   "accepted_names": [
+    "drótszőrű német vizsla"
+   ],
+   "coat_type": "drotos",
+   "grooming_procedure": "trimmeles",
+   "image": "images/drotszoru-nemet-vizsla.webp"
+  },
+  {
+   "id": 120,
+   "slug": "erdelyi-kopo",
+   "name": "Erdélyi kopó",
+   "accepted_names": [
+    "erdélyi kopó"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/erdelyi-kopo.webp"
+  },
+  {
+   "id": 121,
+   "slug": "faraokutya",
+   "name": "Fáraókutya",
+   "accepted_names": [
+    "fáraókutya"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/faraokutya.webp"
+  },
+  {
+   "id": 122,
+   "slug": "finn_spicc",
+   "name": "Finn spicc",
+   "accepted_names": [
+    "finn spicc"
+   ],
+   "coat_type": "kettos",
+   "grooming_procedure": "fesules",
+   "image": "images/finn_spicc.webp"
+  },
+  {
+   "id": 123,
+   "slug": "flandriai_pasztorkutya",
+   "name": "Flandriai pásztorkutya",
+   "accepted_names": [
+    "flandriai pásztorkutya"
+   ],
+   "coat_type": "nyiros",
+   "grooming_procedure": "nyiras",
+   "image": "images/flandriai_pasztorkutya.webp"
+  },
+  {
+   "id": 124,
+   "slug": "hannoveri_vereb",
+   "name": "Hannoveri véreb",
+   "accepted_names": [
+    "hannoveri véreb"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/hannoveri_vereb.webp"
+  },
+  {
+   "id": 125,
+   "slug": "hovawart",
+   "name": "Hovawart",
+   "accepted_names": [
+    "hovawart"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/hovawart.webp"
+  },
+  {
+   "id": 126,
+   "slug": "ir-farkaskutya",
+   "name": "Ír farkaskutya",
+   "accepted_names": [
+    "ír farkaskutya"
+   ],
+   "coat_type": "szalkas",
+   "grooming_procedure": "trimmeles",
+   "image": "images/ir-farkaskutya.webp"
+  },
+  {
+   "id": 127,
+   "slug": "japan_spicc",
+   "name": "Japán spicc",
+   "accepted_names": [
+    "japán spicc"
+   ],
+   "coat_type": "kettos",
+   "grooming_procedure": "fesules",
+   "image": "images/japan_spicc.webp"
+  },
+  {
+   "id": 128,
+   "slug": "keeshond",
+   "name": "Keeshond",
+   "accepted_names": [
+    "keeshond",
+    "farkasspicc"
+   ],
+   "coat_type": "kettos",
+   "grooming_procedure": "fesules",
+   "image": "images/keeshond.webp"
+  },
+  {
+   "id": 129,
+   "slug": "kelpie",
+   "name": "Kelpie",
+   "accepted_names": [
+    "kelpie"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/kelpie.webp"
+  },
+  {
+   "id": 130,
+   "slug": "kis_olasz_agar",
+   "name": "Kis olasz agár",
+   "accepted_names": [
+    "kis olasz agár"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/kis_olasz_agar.webp"
+  },
+  {
+   "id": 131,
+   "slug": "landseer",
+   "name": "Landseer",
+   "accepted_names": [
+    "landseer"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/landseer.webp"
+  },
+  {
+   "id": 132,
+   "slug": "lowchen",
+   "name": "Kis oroszlánkutya",
+   "accepted_names": [
+    "kis oroszlánkutya",
+    "löwchen"
+   ],
+   "coat_type": "nyiros",
+   "grooming_procedure": "nyiras",
+   "image": "images/lowchen.webp"
+  },
+  {
+   "id": 133,
+   "slug": "napolyi_masztiff",
+   "name": "Nápolyi masztiff",
+   "accepted_names": [
+    "nápolyi masztiff"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/napolyi_masztiff.webp"
+  },
+  {
+   "id": 134,
+   "slug": "nemet-pinscher",
+   "name": "Német pinscher",
+   "accepted_names": [
+    "német pinscher",
+    "német pincser"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/nemet-pinscher.webp"
+  },
+  {
+   "id": 135,
+   "slug": "nemet-spicc",
+   "name": "Német spicc",
+   "accepted_names": [
+    "német spicc"
+   ],
+   "coat_type": "kettos",
+   "grooming_procedure": "fesules",
+   "image": "images/nemet-spicc.webp"
+  },
+  {
+   "id": 136,
+   "slug": "orosz-fekete-terrier",
+   "name": "Orosz fekete terrier",
+   "accepted_names": [
+    "orosz fekete terrier"
+   ],
+   "coat_type": "nyiros",
+   "grooming_procedure": "nyiras",
+   "image": "images/orosz-fekete-terrier.webp"
+  },
+  {
+   "id": 137,
+   "slug": "pointer",
+   "name": "Pointer",
+   "accepted_names": [
+    "pointer"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/pointer.webp"
+  },
+  {
+   "id": 138,
+   "slug": "rovidszoru-nemet-vizsla",
+   "name": "Rövidszőrű német vizsla",
+   "accepted_names": [
+    "rövidszőrű német vizsla"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/rovidszoru-nemet-vizsla.webp"
+  },
+  {
+   "id": 139,
+   "slug": "rovidszoru-skot-juhasz",
+   "name": "Rövidszőrű skót juhász",
+   "accepted_names": [
+    "rövidszőrű skót juhász"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/rovidszoru-skot-juhasz.webp"
+  },
+  {
+   "id": 140,
+   "slug": "schipperke",
+   "name": "Schipperke",
+   "accepted_names": [
+    "schipperke"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/schipperke.webp"
+  },
+  {
+   "id": 141,
+   "slug": "sealyham-terrier",
+   "name": "Sealyham terrier",
+   "accepted_names": [
+    "sealyham terrier"
+   ],
+   "coat_type": "szalkas",
+   "grooming_procedure": "trimmeles",
+   "image": "images/sealyham-terrier.webp"
+  },
+  {
+   "id": 142,
+   "slug": "sharpei",
+   "name": "Shar pei",
+   "accepted_names": [
+    "shar pei"
+   ],
+   "coat_type": "rovid",
+   "grooming_procedure": "altalanos",
+   "image": "images/sharpei.webp"
+  },
+  {
+   "id": 143,
+   "slug": "silky_terrier",
+   "name": "Ausztrál silky terrier",
+   "accepted_names": [
+    "ausztrál silky terrier"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/silky_terrier.webp"
+  },
+  {
+   "id": 144,
+   "slug": "simaszoru_retriever",
+   "name": "Simaszőrű retriever",
+   "accepted_names": [
+    "simaszőrű retriever",
+    "flat coated retriever"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/simaszoru_retriever.webp"
+  },
+  {
+   "id": 145,
+   "slug": "skye_terrier",
+   "name": "Skye terrier",
+   "accepted_names": [
+    "skye terrier"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/skye_terrier.webp"
+  },
+  {
+   "id": 146,
+   "slug": "spanyol_vizikutya",
+   "name": "Spanyol vízikutya",
+   "accepted_names": [
+    "spanyol vízikutya"
+   ],
+   "coat_type": "nyiros",
+   "grooming_procedure": "nyiras",
+   "image": "images/spanyol_vizikutya.webp"
+  },
+  {
+   "id": 147,
+   "slug": "sussex_spaniel",
+   "name": "Sussex spániel",
+   "accepted_names": [
+    "sussex spániel",
+    "sussexi spániel"
+   ],
+   "coat_type": "vegyes",
+   "grooming_procedure": "trimmeles",
+   "image": "images/sussex_spaniel.webp"
+  },
+  {
+   "id": 148,
+   "slug": "tervueren",
+   "name": "Tervueren",
+   "accepted_names": [
+    "tervueren"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/tervueren.webp"
+  },
+  {
+   "id": 149,
+   "slug": "tibeti_masztiff",
+   "name": "Tibeti masztiff",
+   "accepted_names": [
+    "tibeti masztiff"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/tibeti_masztiff.webp"
+  },
+  {
+   "id": 150,
+   "slug": "vadkacsavadasz_retriever",
+   "name": "Vadkacsavadász retriever",
+   "accepted_names": [
+    "vadkacsavadász retriever",
+    "nova scotia duck tolling retriever"
+   ],
+   "coat_type": "hosszu",
+   "grooming_procedure": "fesules",
+   "image": "images/vadkacsavadasz_retriever.webp"
+  },
+  {
+   "id": 151,
+   "slug": "voros_feher_ir_szetter",
+   "name": "Vörös-fehér ír szetter",
+   "accepted_names": [
+    "vörös-fehér ír szetter"
+   ],
+   "coat_type": "vegyes",
+   "grooming_procedure": "trimmeles",
+   "image": "images/voros_feher_ir_szetter.webp"
   }
  ]
 }
