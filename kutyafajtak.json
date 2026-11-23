@@ -304,9 +304,9 @@
   {
    "id": 26,
    "slug": "bernathegyi",
-   "name": "Bernáthegyi",
+   "name": "Bernáthegyi kutya",
    "accepted_names": [
-    "bernáthegyi"
+    "bernáthegyi kutya"
    ],
    "coat_type": "hosszu",
    "grooming_procedure": "fesules",
@@ -609,9 +609,9 @@
   {
    "id": 53,
    "slug": "bullterrier",
-   "name": "Bullterrier",
+   "name": "Angol bullterrier",
    "accepted_names": [
-    "bullterrier"
+    "angol bullterrier"
    ],
    "coat_type": "rovid",
    "grooming_procedure": "altalanos",
@@ -809,9 +809,9 @@
   {
    "id": 71,
    "slug": "vereb",
-   "name": "Véreb",
+   "name": "Angol véreb",
    "accepted_names": [
-    "véreb"
+    "angol véreb"
    ],
    "coat_type": "rovid",
    "grooming_procedure": "altalanos",
@@ -820,9 +820,10 @@
   {
    "id": 72,
    "slug": "rhodesiai-ridgeback",
-   "name": "Rhodesiai ridgeback",
+   "name": "Afrikai oroszlánkutya",
    "accepted_names": [
-    "rhodesiai ridgeback"
+    "rhodesian ridgeback",
+    "afrikai oroszlánkutya"
    ],
    "coat_type": "rovid",
    "grooming_procedure": "altalanos",
