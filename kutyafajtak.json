@@ -7,7 +7,6 @@
    "hosszu": "Hosszú-, félhosszú szőr",
    "drotos": "Drótos szőrzet",
    "nemezes": "Nemezes szőrzet",
-   "szortelen": "Szőrtelen",
    "szalkas": "Szálkás szőrzet",
    "kettos": "Északi kettős szőrzet",
    "nyiros": "Nyírós szőrzet",
@@ -1106,7 +1105,7 @@
     "kínai meztelen kutya",
     "kínai kopasz kutya"
    ],
-   "coat_type": "szortelen",
+   "coat_type": "rovid",
    "grooming_procedure": "altalanos",
    "image": "images/kinai-meztelen-kutya.webp"
   },
@@ -1120,7 +1119,7 @@
     "xolo",
     "mexikói kopasz kutya"
    ],
-   "coat_type": "szortelen",
+   "coat_type": "rovid",
    "grooming_procedure": "altalanos",
    "image": "images/mexikoi-meztelen-kutya.webp"
   },
